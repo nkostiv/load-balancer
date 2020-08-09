@@ -12,7 +12,7 @@ mvn clean install
 ### Command line usage
 From project target directory execute jar file
 ```
-java -jar load-balancer-$version.jar --lbvariant $load_balancer_algorithm
+java -jar load-balancer-$version-jar-with-dependencies.jar --lbvariant $load_balancer_algorithm
 ```
 
 Possible $load_balancer_algorithm values:
@@ -22,7 +22,7 @@ Possible $load_balancer_algorithm values:
 
 Request body will be read from console input and request process according to specified algorithm
 
-Example: java -jar load-balancer-0.1-SNAPSHPOT.jar --lbvariant round
+Example: java -jar load-balancer-0.1-SNAPSHOT-jar-with-dependencies.jar --lbvariant round
 
 ### Call from code as a service
 Service class:
